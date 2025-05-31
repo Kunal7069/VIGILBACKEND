@@ -9,7 +9,7 @@ app = FastAPI()
 
 # Configure allowed origins
 origins = [
-    "http://localhost:3000",  # your React app URL
+    "*",  # your React app URL
     # you can add more origins here, e.g., your production URL
 ]
 
