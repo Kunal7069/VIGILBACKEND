@@ -18,6 +18,16 @@ dependencies = [
 ]
 
 
+[tool.poetry]
+packages = [{include = "services", from = "src"}]
+
+
+[tool.poetry.group.dev.dependencies]
+uvicorn = {extras = ["standard"], version = "^0.34.1"}
+
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start-api = "test:app"
