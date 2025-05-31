@@ -53,7 +53,7 @@ router = APIRouter()
 #     return saved_video
 
 UPLOAD_DIR = "./uploaded_videos"
-BASE_URL = "http://localhost:8000"
+BASE_URL = "https://vigilbackend.onrender.com"
 
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
